@@ -62,3 +62,16 @@ a:focus-visible { outline:3px solid #ffb23f; outline-offset:3px; }
 @media(max-width:960px) { .nav { flex-wrap:wrap; gap:15px; padding:13px 0; } .links { order:3; justify-content:center; gap:15px; width:100%; } .ff { margin-left:auto; min-width:185px; } .ff img { width:185px; } .criteria { grid-template-columns:repeat(2,1fr); } }
 @media(max-width:650px) { .wrap { padding:0 16px; } .brand { font-size:24px; } .ff { min-width:140px; } .ff img { width:140px; } .links a { font-size:11px; } .hero-inner { grid-template-columns:1fr; } .hero-copy { padding:35px 0 18px; } .hero h1 { font-size:78px; } .hero p { font-size:14px; } .hero-img { min-height:190px; } .hero-img:after { background:linear-gradient(180deg,var(--deep),transparent 40%); } .values,.events { grid-template-columns:1fr; } .criteria { grid-template-columns:1fr 1fr; } .join { display:block; } .join .button { margin-top:18px; } .footer .wrap { display:block; } }
 @media(max-width:425px) { .criteria { grid-template-columns:1fr; } }
+
+
+/* Logo régional : harmonisé avec la taille utilisée sur la page Brest. */
+.ff { min-width:295px; max-width:325px; padding:9px 12px; background:#092263; }
+.ff img { display:block; width:300px; max-width:100%; height:auto; }
+@media(max-width:930px) {
+  .ff { min-width:230px; max-width:265px; }
+  .ff img { width:250px; }
+}
+@media(max-width:630px) {
+  .ff { min-width:130px; max-width:182px; padding:5px; }
+  .ff img { width:174px; }
+}
