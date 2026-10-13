@@ -62,6 +62,7 @@ Fichiers dédiés :
 
 - Accueil : `styles.css`.
 - Le circuit : `le-circuit/page.css`.
+- Les Opens : `les-opens/page.css`.
 - Brest : `2026-2027/brest/page.css`.
 
 Chaque CSS contient aussi les règles `@media` pour les écrans étroits. Tester sur ordinateur **et sur smartphone** après modification. Modifier les couleurs ou espacements dans le CSS ; éviter d'ajouter un nouveau `<style>` directement dans le HTML.
@@ -75,11 +76,11 @@ Chaque CSS contient aussi les règles `@media` pour les écrans étroits. Tester
 5. Ajouter un lien dans les menus de l'accueil et des autres pages.
 6. Vérifier le rendu sur téléphone.
 
-**Projet suivant :** créer une page « Les Opens » et y déplacer la partie « Jugement Freestyle Open » de `le-circuit/index.html`. Ne pas figer les règles sportives sans validation du comité régional.
+**Page « Les Opens » :** créée dans `les-opens/index.html`. Les quatre dimensions indicatives du jugement Freestyle s’y trouvent. Avant de modifier ces dimensions ou de publier un règlement, obtenir la validation du comité régional.
 
 ## 7. Contrôles avant et après chaque publication
 
-- Les trois URL publiques principales fonctionnent-elles ?
+- Les quatre URL publiques principales fonctionnent-elles (accueil, Le circuit, Les Opens, Brest) ?
 - Les images et le logo s'affichent-ils ?
 - Les liens « Le circuit », « Brest » et les boutons mènent-ils à la bonne page ?
 - Le formulaire Tally s'ouvre-t-il et s'adapte-t-il à la hauteur de la page ?
