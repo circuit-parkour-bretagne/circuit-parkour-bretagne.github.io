@@ -490,3 +490,20 @@ a:focus-visible{
   .ff { min-width:130px; max-width:182px; padding:5px; }
   .ff img { width:174px; }
 }
+
+
+/* Bandeau Le Circuit : illustration panoramique, texte à gauche.
+   Déposer la photo dans le-circuit/assets/hero-le-circuit.jpg.
+   En l'absence d'image, le dégradé bleu d'origine reste visible. */
+.hero-circuit { min-height:390px; display:flex; align-items:center; isolation:isolate; background:#101e43; }
+.hero-circuit::after { display:none; }
+.hero-circuit .hero-art { position:absolute; z-index:-2; inset:0; background-image:url("assets/hero-le-circuit.jpg"); background-size:cover; background-position:right center; background-repeat:no-repeat; }
+.hero-circuit .hero-shade { position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,#0b1941 0%,rgba(11,25,65,.96) 20%,rgba(11,25,65,.76) 38%,rgba(11,25,65,.12) 66%,transparent 83%); }
+.hero-circuit .hero-content { width:100%; position:relative; }
+.hero-circuit h1 { max-width:690px; }
+.hero-circuit p { max-width:580px; }
+@media (max-width:650px) {
+  .hero-circuit { min-height:390px; }
+  .hero-circuit .hero-art { background-position:65% center; }
+  .hero-circuit .hero-shade { background:linear-gradient(90deg,rgba(11,25,65,.99) 0%,rgba(11,25,65,.93) 48%,rgba(11,25,65,.4) 100%); }
+}
