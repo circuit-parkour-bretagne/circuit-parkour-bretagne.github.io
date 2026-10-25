@@ -1,0 +1,39 @@
+/* Version de travail pour validation éditoriale. Les styles officiels restent dans page.css. */
+.preview-banner { background:#ffdf80; color:#192557; border-bottom:3px solid #d69900; }
+.preview-banner .wrap { display:flex; align-items:center; gap:15px; padding-top:10px; padding-bottom:10px; flex-wrap:wrap; }
+.preview-banner strong { font:900 17px 'Barlow Condensed',sans-serif; letter-spacing:.5px; }
+.preview-banner span { font-size:12px; }
+.hero-final-link { display:inline-block; margin-top:13px; padding:10px 17px; color:#fff; border:1px solid #f38e95; border-radius:5px; font-size:12px; font-weight:800; text-decoration:none; background:rgba(15,25,62,.62); }
+.hero-final-link:hover { background:#ec2433; color:#fff; }
+.finale-feature { margin:40px 0 32px; background:linear-gradient(126deg,#111b46,#152b68 70%,#2a3f77); border-radius:12px; overflow:hidden; color:white; box-shadow:0 12px 30px #101c4430; }
+.finale-topline { display:flex; align-items:center; justify-content:space-between; gap:15px; background:#eb2434; padding:10px 30px; font-size:11px; font-weight:900; letter-spacing:1.8px; }
+.finale-mark { color:#fff; font:900 22px 'Barlow Condensed',sans-serif; letter-spacing:1px; }
+.finale-mark-accent { color:#ffc9c9; }
+.finale-layout { display:grid; grid-template-columns: 1.3fr .7fr; gap:30px; padding:40px 35px 36px; }
+.finale-heading h2 { font:900 clamp(80px,11vw,160px)/.84 'Barlow Condensed',sans-serif; letter-spacing:1px; margin:14px 0 12px; }
+.finale-kicker { color:#e0e7fa; text-transform:uppercase; font-size:12px; font-weight:800; letter-spacing:1.5px; }
+.finale-period { color:#ed2938; }
+.finale-subtitle { font:600 clamp(17px,2.1vw,25px)/1.35 Inter,Arial,sans-serif; max-width:520px; }
+.finale-subtitle strong { color:#fff; }
+.finale-link { display:inline-block; margin-top:18px; color:#fff; font-weight:800; font-size:12px; }
+.finale-panel { align-self:center; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.23); border-radius:10px; padding:22px 25px; }
+.finale-date { display:flex; flex-direction:column; gap:0; margin-bottom:18px; border-bottom:1px solid #7180a3; padding-bottom:13px; }
+.finale-date span { font:900 clamp(65px,8vw,112px)/.93 'Barlow Condensed',sans-serif; color:#fff; }
+.finale-date strong { font:900 28px 'Barlow Condensed',sans-serif; letter-spacing:3px; color:#ff828a; }
+.finale-panel p { font-size:13px; color:#ecf1ff; line-height:1.55; }
+.finale-panel .finale-note { color:#ccd6f1; font-size:11px; font-style:italic; margin-bottom:0; }
+.finale-bottom { display:flex; align-items:center; justify-content:center; gap:17px; padding:16px 25px; background:#0b1538; flex-wrap:wrap; }
+.finale-bottom span { color:#e3eafa; font-size:12px; font-weight:700; }
+.finale-bottom strong { color:#fff; font:900 25px 'Barlow Condensed',sans-serif; margin-right:4px; }
+.finale-bottom .finale-flow { color:#ef3b48; font-size:26px; }
+.brick-feature { margin:28px 0 42px; display:grid; grid-template-columns:.89fr 1.11fr; gap:0; border:1px solid #e0e6ef; background:#fff; border-radius:12px; overflow:hidden; }
+.brick-image { position:relative; min-height:410px; background:#112655; }
+.brick-image img { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:58% center; }
+.brick-image-label { position:absolute; bottom:22px; left:18px; right:18px; color:white; background:#122352e8; padding:13px 16px; font:900 23px 'Barlow Condensed',sans-serif; letter-spacing:.7px; }
+.brick-copy { padding:37px 40px; }
+.brick-copy h2 { font:900 clamp(42px,5vw,64px)/.98 'Barlow Condensed',sans-serif; color:#142452; margin:18px 0 18px; }
+.brick-copy h2 span { color:#e52236; }
+.brick-copy p { font-size:13px; line-height:1.68; margin-bottom:16px; }
+.brick-link { color:#c21d2d; font-size:12px; font-weight:800; }
+@media(max-width:900px) { .finale-layout { grid-template-columns:1fr; } .finale-panel { max-width:none; } .brick-feature { grid-template-columns:1fr; } .brick-image { min-height:320px; } }
+@media(max-width:650px) { .finale-feature { margin-top:26px; } .finale-topline { padding:11px 18px; font-size:10px; } .finale-layout { padding:26px 20px; gap:18px; } .finale-heading h2 { font-size:100px; } .finale-date span { font-size:82px; } .finale-bottom { justify-content:flex-start; gap:8px; } .finale-bottom .finale-flow { font-size:17px; } .brick-copy { padding:26px 23px; } .brick-copy h2 { font-size:50px; } .brick-image { min-height:270px; } }
