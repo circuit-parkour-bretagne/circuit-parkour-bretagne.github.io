@@ -9,3 +9,6 @@
 .journal-home-body a,.journal-home-more a{color:#b82133;font-size:13px;font-weight:800}
 .journal-home-more{text-align:right;margin:14px 0 0}
 @media(max-width:660px){.journal-home-story{grid-template-columns:1fr}.journal-home-poster{min-height:220px;max-height:265px}.journal-home-body{padding:21px}.journal-home-body h3{font-size:38px}.journal-home-more{text-align:left}}
+
+/* Même montage haute définition que dans le Journal. */
+.journal-home-cover{background-image:url("journal/assets/episodes-hd.webp"),url("journal/assets/episodes.webp");background-size:500% 100%,500% 100%;background-position:0% 0%,0% 0%;background-repeat:no-repeat,no-repeat}
