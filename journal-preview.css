@@ -12,3 +12,12 @@
 
 /* Même montage haute définition que dans le Journal. */
 .journal-home-cover{background-image:url("journal/assets/episodes-hd.webp"),url("journal/assets/episodes.webp");background-size:500% 100%,500% 100%;background-position:0% 0%,0% 0%;background-repeat:no-repeat,no-repeat}
+
+/* Journal accueil : format portrait de la vignette préservé. */
+.journal-home-story{grid-template-columns:minmax(190px,250px) minmax(0,1fr);align-items:center}
+.journal-home-poster{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:9/16;align-self:center;justify-self:start;background:transparent}
+.journal-home-cover{inset:0;width:100%;height:100%;background-color:transparent}
+@media(max-width:660px){
+  .journal-home-story{grid-template-columns:1fr}
+  .journal-home-poster{width:min(100%,210px);height:auto;min-height:0;max-height:none;justify-self:center;margin:18px auto 0}
+}
