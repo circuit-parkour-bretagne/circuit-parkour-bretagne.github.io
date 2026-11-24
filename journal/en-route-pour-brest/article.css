@@ -9,3 +9,12 @@
 .article-note{margin-top:26px;border-left:4px solid #294a8a;padding:13px 18px;background:#e7edf8;color:#34435e;font-size:12px;border-radius:5px}.article-next{margin-top:27px;background:#152451;color:#fff;padding:25px 29px;border-radius:9px;display:flex;align-items:center;justify-content:space-between;gap:22px}.article-next h2{font:900 29px 'Barlow Condensed',Impact,sans-serif;margin:7px 0}.article-next p{font-size:12px;margin:0;max-width:760px;color:#e3eafa}.article-next .primary-link{flex:0 0 auto}
 @media(max-width:880px){.reel-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reel-card{max-width:350px}.article-hero h1{font-size:80px}}
 @media(max-width:520px){.article-hero{padding:30px 0 37px}.article-hero h1{font-size:64px}.article-main{padding-top:27px}.reel-grid{gap:10px}.reel-body{padding:11px 11px 13px}.reel-body h3{font-size:20px}.reel-body p{font-size:11px}.reel-cta{font-size:11px}.bonus{padding:15px;gap:13px}.bonus-cover{width:78px;flex-basis:78px}.bonus h2{font-size:27px}.article-next{display:block;padding:19px}.article-next .primary-link{margin-top:15px}}
+
+/* Repères de navigation entre le Journal et ses articles. */
+.journal-breadcrumb{background:#eef2f9;border-bottom:1px solid #d6e0f0;color:#203463}
+.journal-breadcrumb .wrap{padding-top:12px;padding-bottom:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.journal-breadcrumb a{font-size:11px;font-weight:900;text-decoration:none;color:#bb2032;letter-spacing:.5px}
+.journal-breadcrumb a:hover{text-decoration:underline}
+.journal-breadcrumb span{font-size:11px;font-weight:800;letter-spacing:.4px}
+.journal-breadcrumb span[aria-current="page"]{color:#51627e}
+@media(max-width:520px){.journal-breadcrumb .wrap{padding-top:9px;padding-bottom:9px}.journal-breadcrumb a,.journal-breadcrumb span{font-size:10px}}
