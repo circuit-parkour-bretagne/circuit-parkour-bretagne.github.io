@@ -14,3 +14,19 @@
 
 /* Repli automatique : montage HD dès sa présence, ancienne vignette sinon. */
 .featured-image-cover{background-image:url("assets/episodes-hd.webp"),url("assets/episodes.webp");background-size:500% 100%,500% 100%;background-position:0% 0%,0% 0%;background-repeat:no-repeat,no-repeat}
+
+/* Correctif proportions vignette Instagram : chaque couverture d'une planche
+   de 5 images garde son ratio vertical 9:16 dans la carte d'accueil du Journal. */
+.featured-image { background:#172654; }
+.featured-image-cover {
+  width:auto;
+  height:100%;
+  aspect-ratio:9 / 16;
+  flex:0 0 auto;
+  max-width:none;
+  background-color:#172654;
+  background-image:url("assets/episodes-hd.webp"),url("assets/episodes.webp");
+  background-size:500% 100%,500% 100%;
+  background-position:0% 0%,0% 0%;
+  background-repeat:no-repeat,no-repeat;
+}
