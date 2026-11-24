@@ -167,3 +167,55 @@ a:focus-visible { outline:3px solid #ffb23f; outline-offset:3px; }
 .rules-cover-label { position:absolute; z-index:1; bottom:0; left:0; right:0; font-size:10px; }
 @media(max-width:760px){ .rules-document { grid-template-columns:minmax(0,1fr) 115px; gap:16px; padding:22px; } .rules-cover-link { width:110px; height:155px; } }
 @media(max-width:520px){ .rules-document { grid-template-columns:1fr; } .rules-cover-link { width:140px; height:197px; } .speedrun-icon { width:40px !important; height:40px !important; min-width:40px; flex:0 0 40px !important; font-size:28px; } }
+
+/* 2026-11-24 — section jugement clairement distincte, sans surcharger la page. */
+.judging-framed {
+  margin:42px 0 0;
+  padding:24px 27px 27px;
+  background:#edf2fa;
+  border:1px solid #dce5f2;
+  border-top:5px solid var(--red);
+  border-radius:10px;
+}
+.judging-framed .rules-section-heading { margin:2px 0 25px; }
+.judging-framed .discipline-block { margin:26px 0 30px; }
+.judging-framed .criterion { background:#fff; }
+.judging-framed .rules-document { margin-bottom:0; }
+
+/* Vignette fixe : vraie couverture, ratio conservé, sans interface PDF ni bandeau superposé. */
+.judging-framed .rules-document {
+  grid-template-columns:minmax(0,1fr) 195px;
+  gap:26px;
+}
+.judging-framed .rules-cover-link {
+  width:180px;
+  height:auto;
+  aspect-ratio:806 / 1155;
+  transform:rotate(1deg);
+  border:2px solid #fff;
+  overflow:hidden;
+}
+.judging-framed .rules-cover-preview {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+.judging-framed .rules-cover-link:hover { transform:rotate(0deg); }
+
+/* iOS : zone d'image de dimensions explicites, avec une photo de secours. */
+.hero-img picture { display:block; position:absolute; inset:0; }
+.hero-img picture img { width:100%; height:100%; object-fit:cover; }
+
+/* Breakpoints dédiés à la section jugement, y compris les iPhone en portrait. */
+@media(max-width:760px) {
+  .judging-framed { margin-top:33px; padding:18px 19px 21px; }
+  .judging-framed .rules-document { grid-template-columns:minmax(0,1fr) 143px; gap:15px; padding:19px; }
+  .judging-framed .rules-cover-link { width:136px; }
+}
+@media(max-width:520px) {
+  .judging-framed { padding:17px 13px 19px; margin-top:30px; }
+  .judging-framed .rules-document { grid-template-columns:1fr; gap:22px; }
+  .judging-framed .rules-cover-link { width:175px; justify-self:center; transform:none; }
+  .judging-framed .rules-cover-link:hover { transform:none; }
+}
