@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#152451">
   <meta name="description" content="Les Opens du Circuit Parkour Bretagne : découvrir la compétition, partager le Parkour et participer sans licence FFGym.">
   <title>Les Opens · Circuit Parkour Bretagne</title>
-  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="page.css?v=20261124-3">
 </head>
 <body>
 <!-- EN-TÊTE : navigation commune, adapter les liens relatifs si cette page change de dossier -->
@@ -66,7 +66,7 @@
     <section class="judging" id="jugement-open" aria-labelledby="jugement-title">
       <div class="rules-section-heading">
         <div class="rules-kicker">LES OPENS · SAISON 2026–2027</div>
-        <h2 class="rules-main-title" id="jugement-title">RÈGLES DE JUGEMENT</h2>
+        <h2 class="sectitle" id="jugement-title">RÈGLES DE JUGEMENT</h2>
         <p>Deux épreuves, deux façons de relever le défi. Les Opens appliquent leurs propres règles, distinctes de celles des compétitions fédérales FFGym.</p>
       </div>
 
@@ -93,11 +93,7 @@
           <p class="discipline-subtitle">Le chrono décide</p>
         </div>
         <div class="speedrun-chrono">
-          <svg class="speedrun-icon" viewBox="0 0 80 80" role="img" aria-label="Chronomètre">
-            <circle cx="40" cy="45" r="25" fill="none" stroke="currentColor" stroke-width="5"/>
-            <path d="M40 20 V10 M31 9 H49 M58 23 L65 17" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-            <path d="M40 45 L40 30 M40 45 L52 49" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-          </svg>
+          <span class="speedrun-icon" aria-hidden="true">⏱</span>
           <div>
             <p>Relier le départ à l'arrivée <strong>le plus vite possible</strong>, en passant par les points obligatoires. Deux essais possibles, le second facultatif : <strong>le meilleur temps est retenu</strong>.</p>
             <div class="speedrun-keyfacts"><span>2 passages maximum</span><span>+10 s par point manqué</span><span>Meilleur chrono retenu</span></div>
@@ -119,7 +115,8 @@
           <a class="rules-pdf-link" href="assets/Regles-de-jugement-Opens-Circuit-Parkour-Bretagne.pdf" target="_blank" rel="noopener noreferrer">Consulter le règlement complet (PDF) ↗</a>
         </div>
         <a class="rules-cover-link" href="assets/Regles-de-jugement-Opens-Circuit-Parkour-Bretagne.pdf" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le PDF des règles de jugement des Opens">
-          <iframe class="rules-cover-preview" src="assets/Regles-de-jugement-Opens-Circuit-Parkour-Bretagne.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0&view=Fit" title="Aperçu de la couverture du règlement régional des Opens" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+          <span class="rules-cover-fallback" aria-hidden="true"><small>CIRCUIT PARKOUR BRETAGNE</small><strong>RÈGLES DE<br>JUGEMENT.</strong><em>LES OPENS · 2026–2027</em></span>
+          <img class="rules-cover-preview" src="assets/couverture-regles-opens.jpg" alt="Couverture du règlement de jugement des Opens 2026–2027" loading="lazy" onerror="this.style.display='none'">
           <span class="rules-cover-label">Aperçu du document ↗</span>
         </a>
       </div>
