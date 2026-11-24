@@ -1,0 +1,11 @@
+/* Aperçu éditorial du Journal sur la page d'accueil. */
+.journal-home-story{display:grid;grid-template-columns:minmax(210px,.38fr) 1fr;background:#fff;border:1px solid #dbe4f1;border-radius:9px;overflow:hidden;min-height:245px}
+.journal-home-poster{display:block;position:relative;overflow:hidden;background:#172754;min-height:235px}
+.journal-home-cover{position:absolute;inset:0;background-image:url("journal/assets/episodes.webp");background-size:500% 100%;background-position:0% 0%;background-repeat:no-repeat}
+.journal-home-tag{position:absolute;left:15px;bottom:15px;right:15px;display:inline-block;padding:8px 10px;background:#e62639;color:#fff;font-size:11px;font-weight:900;text-align:center;letter-spacing:.5px}
+.journal-home-body{padding:27px 32px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.journal-home-body h3{font:900 clamp(32px,4vw,46px)/1 'Barlow Condensed',Impact,sans-serif;color:#192557;margin:9px 0}
+.journal-home-body p{font-size:13px;line-height:1.6;margin:0 0 15px;max-width:630px}
+.journal-home-body a,.journal-home-more a{color:#b82133;font-size:13px;font-weight:800}
+.journal-home-more{text-align:right;margin:14px 0 0}
+@media(max-width:660px){.journal-home-story{grid-template-columns:1fr}.journal-home-poster{min-height:220px;max-height:265px}.journal-home-body{padding:21px}.journal-home-body h3{font-size:38px}.journal-home-more{text-align:left}}
