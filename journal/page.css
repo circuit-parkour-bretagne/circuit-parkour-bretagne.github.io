@@ -11,3 +11,6 @@
 
 /* Première vignette extraite de la planche des 5 couvertures. */
 .featured-image-cover{display:block;width:100%;height:100%;background:#142451 url("assets/episodes.webp") no-repeat 0% 0%/500% 100%;}
+
+/* Repli automatique : montage HD dès sa présence, ancienne vignette sinon. */
+.featured-image-cover{background-image:url("assets/episodes-hd.webp"),url("assets/episodes.webp");background-size:500% 100%,500% 100%;background-position:0% 0%,0% 0%;background-repeat:no-repeat,no-repeat}
