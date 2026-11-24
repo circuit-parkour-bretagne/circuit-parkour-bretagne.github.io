@@ -88,3 +88,10 @@ a:focus-visible { outline:3px solid #ffb23f; outline-offset:3px; }
 .rules-pdf-link[hidden],.rules-pdf-status[hidden] { display:none; }
 .rules-document .rules-pdf-status { color:#fff0b3; margin:0; font-size:12px; }
 @media(max-width:650px){ .rules-document { padding:20px; } }
+
+/* Speedrun présenté à part : le chronomètre est la règle centrale. */
+.speedrun-chrono{display:flex;align-items:center;gap:20px;background:#142451;color:#fff;border-left:5px solid #eb2434;border-radius:8px;padding:20px 23px;margin:22px 0;}
+.speedrun-chrono-mark{font-size:43px;line-height:1;flex:0 0 auto;}
+.speedrun-chrono h3{font:900 27px/1.1 'Barlow Condensed',Impact,sans-serif;margin:0 0 8px;color:#fff;}
+.speedrun-chrono p{font-size:13px;line-height:1.65;margin:0;color:#e3eaf8;}
+@media(max-width:480px){.speedrun-chrono{align-items:flex-start;gap:12px;padding:17px}.speedrun-chrono-mark{font-size:30px}.speedrun-chrono h3{font-size:24px}}
