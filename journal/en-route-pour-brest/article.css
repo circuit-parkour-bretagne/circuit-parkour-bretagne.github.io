@@ -18,3 +18,15 @@
 .journal-breadcrumb span{font-size:11px;font-weight:800;letter-spacing:.4px}
 .journal-breadcrumb span[aria-current="page"]{color:#51627e}
 @media(max-width:520px){.journal-breadcrumb .wrap{padding-top:9px;padding-bottom:9px}.journal-breadcrumb a,.journal-breadcrumb span{font-size:10px}}
+
+/* Identité constante du Journal, lisible dès l'arrivée sur l'article. */
+.article-identity{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin:2px 0 15px}
+.article-identity strong{display:inline-block;background:#ed2437;color:white;border-radius:3px;padding:7px 12px;font-size:11px;font-weight:900;letter-spacing:1px}
+.article-identity span{color:#e0e6fb;font-size:11px;font-weight:800;letter-spacing:.7px}
+/* Préférer le montage HD une fois téléchargé, avec repli sur l'ancien. */
+.reel-image,.bonus-cover{background-image:url("../assets/episodes-hd.webp"),url("../assets/episodes.webp");background-size:500% 100%,500% 100%;background-repeat:no-repeat,no-repeat}
+.episode-1{background-position:0% 0%,0% 0%}
+.episode-2{background-position:25% 0%,25% 0%}
+.episode-3{background-position:50% 0%,50% 0%}
+.episode-4{background-position:75% 0%,75% 0%}
+.episode-5{background-position:100% 0%,100% 0%}
