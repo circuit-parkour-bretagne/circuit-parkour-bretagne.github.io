@@ -53,28 +53,54 @@
       <div class="highlight"><p><strong>Aucune exclusivité de licence :</strong> les Opens sont également accessibles aux traceurs qui ne sont pas licenciés à la FFGym. Ils ne servent pas à gagner des points pour le classement du circuit fédéral et chaque Open est indépendant des autres.</p></div>
     </section>
 
-    <!-- ÉPREUVES : descriptif général. Les règles exactes restent à préciser. -->
+    <!-- ÉPREUVES : principes et catégories issus du règlement régional des Opens 2026–2027. -->
     <section aria-labelledby="epreuves">
       <h2 class="sectitle" id="epreuves">DEUX FAÇONS DE RELEVER LE DÉFI</h2>
       <div class="events">
-        <article class="event"><h3>SPEEDRUN</h3><p>Parcourir un enchaînement d'obstacles le plus rapidement possible. Vitesse, trajectoires et efficacité sont au cœur de l'épreuve.</p><small>Les parcours et les modalités pratiques sont précisés par l'organisateur de chaque Open.</small></article>
-        <article class="event"><h3>FREESTYLE</h3><p>Composer un passage libre pour exprimer sa façon de pratiquer : enchaînements, variété, maîtrise et créativité.</p><small>Le dispositif d'évaluation simplifié est en cours de définition.</small></article>
+        <article class="event"><h3>SPEEDRUN</h3><p>Relier le départ à l’arrivée le plus rapidement possible en respectant les points de passage obligatoires. Deux passages possibles, dont le second est facultatif : le meilleur temps est retenu.</p><small>Dès 10 ans · Pénalité de 10 secondes par point de passage manqué.</small></article>
+        <article class="event"><h3>FREESTYLE</h3><p>Composer un run libre, sans durée imposée. Les juges évaluent les tricks, la variété des mouvements, la fluidité, la sécurité et l’impact de la prestation sur le public.</p><small>Dès 12 ans · Les cinq tricks les plus valorisés comptent en difficulté.</small></article>
       </div>
     </section>
 
-    <!-- JUGEMENT FREESTYLE : contenu indicatif à valider par le comité régional -->
+    <!-- JUGEMENT OPEN : synthèse du règlement régional 2026–2027. -->
     <section class="judging" id="jugement-open" aria-labelledby="jugement-title">
-      <div class="eyebrow">Un jugement compréhensible</div>
-      <h2 class="sectitle" id="jugement-title">L'ESPRIT DU JUGEMENT FREESTYLE</h2>
-      <p>Les Opens recherchent une évaluation simple, accessible aux participants et aux juges, sans reproduire l'ensemble du règlement fédéral. Quatre dimensions résument pour le moment l'esprit du jugement envisagé :</p>
+      <div class="eyebrow">Règles de jugement · Opens 2026–2027</div>
+      <h2 class="sectitle" id="jugement-title">COMMENT SONT JUGÉES LES ÉPREUVES ?</h2>
+      <p>Les Opens ont leurs propres règles de jugement, distinctes de celles des compétitions fédérales FFGym. Voici les principaux repères pour les deux épreuves. <strong>Le règlement régional de six pages reste le document de référence</strong> pour les critères détaillés et la grille de difficulté.</p>
       <div class="criteria">
-        <article class="criterion"><span class="number">01</span><h3>FLUIDITÉ</h3><p>Le rythme des enchaînements et la continuité du run.</p></article>
-        <article class="criterion"><span class="number">02</span><h3>VARIÉTÉ</h3><p>La diversité des mouvements, des obstacles et des supports utilisés.</p></article>
-        <article class="criterion"><span class="number">03</span><h3>MAÎTRISE</h3><p>Le contrôle des mouvements, la précision et l'attention portée à la sécurité.</p></article>
-        <article class="criterion"><span class="number">04</span><h3>CRÉATIVITÉ ET SPECTACLE</h3><p>L'originalité des choix et la capacité à proposer une prestation expressive.</p></article>
+        <article class="criterion"><span class="number">01</span><h3>DIFFICULTÉ ET DIVERSIFICATION</h3><p>En Freestyle, jusqu’à cinq tricks comptent pour la difficulté (sans plafond) ; la diversification récompense la variété, sur 5 points.</p></article>
+        <article class="criterion"><span class="number">02</span><h3>FLUIDITÉ ET SÉCURITÉ</h3><p>Deux notes sur 10 points chacune : elles partent de 10 et diminuent avec les fautes relevées pendant le run.</p></article>
+        <article class="criterion"><span class="number">03</span><h3>SHOW</h3><p>Une note sur 5 points valorise le spectacle (2), l’interaction avec le public (2) et l’originalité (1).</p></article>
+        <article class="criterion"><span class="number">04</span><h3>SPEEDRUN AU CHRONO</h3><p>Un passage chronométré et un second facultatif. Le meilleur temps est retenu, avec +10 s par point obligatoire manqué.</p></article>
       </div>
-      <div class="caution"><strong>Les règles ne sont pas encore définitives.</strong> Les critères précis, les modalités d'évaluation et le classement seront communiqués par les organisateurs après validation. Les quatre dimensions ci-dessus présentent une intention, pas un règlement applicable.</div>
+      <div class="rules-extra">
+        <p><strong>Avant les épreuves :</strong> après l’échauffement articulaire, les participants disposent de 30 minutes pour découvrir le FoP et préparer leur passage.</p>
+        <p><strong>Catégories :</strong> en Freestyle, 12–15 ans et 16 ans et plus ; en Speedrun, 10–11 ans (catégorie à l’essai), 12–15 ans et 16 ans et plus. Chaque classe d’âge comporte un classement Femmes et un classement Hommes.</p>
+      </div>
+      <div class="rules-document">
+        <div>
+          <strong>LE RÈGLEMENT COMPLET DES OPENS</strong>
+          <p>Freestyle, Speedrun, pénalités, catégories et grilles de difficulté : retrouvez les règles détaillées dans le PDF (6 pages).</p>
+          <a class="rules-pdf-link" id="rules-pdf-link" href="assets/Regles-de-jugement-Opens-Circuit-Parkour-Bretagne.pdf" target="_blank" rel="noopener noreferrer" hidden>Consulter les règles de jugement (PDF) ↗</a>
+          <p class="rules-pdf-status" id="rules-pdf-status">Le document PDF sera disponible ici dès sa mise en ligne.</p>
+        </div>
+      </div>
     </section>
+    <script>
+      /* Le lien n'est affiché que lorsque le PDF existe réellement sur le site. */
+      (function () {
+        const link = document.getElementById('rules-pdf-link');
+        const status = document.getElementById('rules-pdf-status');
+        fetch(link.getAttribute('href'), { method: 'HEAD', cache: 'no-store' })
+          .then(function (response) {
+            if (response.ok && (response.headers.get('content-type') || '').includes('pdf')) {
+              link.hidden = false;
+              status.hidden = true;
+            }
+          })
+          .catch(function () { /* En cas d'indisponibilité, afficher le statut d'attente. */ });
+      })();
+    </script>
 
     <aside class="join">
       <div><h2>PREMIER RENDEZ-VOUS : BREST</h2><p>Le 29 novembre 2026, la Légion Saint-Pierre accueille l'Open de Brest. Préinscriptions, lieu et horaires sur la page de l'étape.</p></div>
@@ -85,7 +111,7 @@
 <footer class="footer">
   <div class="wrap">
     <div><strong>CIRCUIT PARKOUR BRETAGNE</strong><p>Une initiative régionale dans le cadre de la FFGym Bretagne.</p></div>
-    <p>Informations sportives susceptibles d'évoluer jusqu'à la validation des règlements.</p>
+    <p>Pour les Opens, se référer au règlement régional de jugement 2026–2027.</p>
   </div>
 </footer>
 </body>
