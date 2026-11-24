@@ -75,3 +75,16 @@ a:focus-visible { outline:3px solid #ffb23f; outline-offset:3px; }
   .ff { min-width:130px; max-width:182px; padding:5px; }
   .ff img { width:174px; }
 }
+
+/* Règles de jugement des Opens — lecture, catégories et document PDF. */
+.rules-extra { background:#edf2f9; border-left:4px solid #294882; border-radius:5px; padding:16px 20px; margin:18px 0 22px; }
+.rules-extra p { font-size:13px; line-height:1.6; margin:0; }
+.rules-extra p+p { margin-top:9px; }
+.rules-document { background:#152451; color:#fff; border-radius:9px; border-top:5px solid #eb2434; padding:24px 27px; margin-top:20px; }
+.rules-document strong { font:900 25px 'Barlow Condensed',Impact,sans-serif; letter-spacing:.3px; }
+.rules-document p { font-size:13px; line-height:1.6; color:#e1e8f6; margin:9px 0 16px; }
+.rules-pdf-link { display:inline-block; padding:12px 17px; color:#fff; background:#e42335; border-radius:5px; text-decoration:none; font-size:13px; font-weight:800; }
+.rules-pdf-link:hover { background:#c0192b; color:#fff; }
+.rules-pdf-link[hidden],.rules-pdf-status[hidden] { display:none; }
+.rules-document .rules-pdf-status { color:#fff0b3; margin:0; font-size:12px; }
+@media(max-width:650px){ .rules-document { padding:20px; } }
