@@ -142,3 +142,28 @@ a:focus-visible { outline:3px solid #ffb23f; outline-offset:3px; }
   .speedrun-keyfacts span { font-size:10px; }
   .rules-main-title { font-size:44px; }
 }
+
+/* Rééquilibrage avec les sections historiques du site, en remplacement du style expérimental. */
+.rules-section-heading { margin:29px 0 27px; }
+.rules-section-heading .sectitle { font:900 clamp(30px,4vw,42px)/1 'Barlow Condensed',Impact,sans-serif; color:var(--navy); margin:6px 0 16px; }
+.rules-section-heading .sectitle::after { content:''; display:inline-block; width:40px; height:4px; background:var(--red); margin-left:13px; vertical-align:middle; }
+.rules-kicker { color:var(--red); font-size:12px; font-weight:900; letter-spacing:1px; }
+.discipline-block { margin:27px 0 29px; }
+.discipline-heading { padding-bottom:10px; margin-bottom:13px; }
+.discipline-heading h3 { font-size:clamp(31px,3.5vw,42px); }
+.discipline-subtitle { font-size:14px; }
+.speedrun-block .speedrun-chrono { margin-top:14px; }
+.speedrun-icon { display:inline-flex !important; align-items:center; justify-content:center; width:55px !important; height:55px !important; min-width:55px; flex:0 0 55px !important; font-size:36px; line-height:1; color:#fff; }
+.speedrun-keyfacts { gap:7px; }
+.speedrun-keyfacts span { display:inline-block; }
+.rules-document { display:grid; grid-template-columns:minmax(0,1fr) 180px; gap:28px; align-items:center; padding:24px 30px; }
+.rules-document-copy { min-width:0; }
+.rules-cover-link { position:relative; display:block; overflow:hidden; width:156px; height:221px; background:#fff; border:2px solid #fff; border-radius:3px; box-shadow:7px 9px 17px rgba(0,0,0,.28); transform:rotate(2deg); }
+.rules-cover-preview { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block; border:0; }
+.rules-cover-fallback { position:absolute; inset:0; display:flex; flex-direction:column; gap:12px; padding:15px 10px; justify-content:center; color:#172554; background:linear-gradient(165deg,#fff 0%,#edf2f8 55%,#1a2a60 55%,#1a2a60 100%); }
+.rules-cover-fallback small { font-weight:900; font-size:9px; }
+.rules-cover-fallback strong { font:900 25px/1 'Barlow Condensed',Impact,sans-serif; color:#152451; }
+.rules-cover-fallback em { font-size:10px; color:#fff; font-weight:800; font-style:normal; }
+.rules-cover-label { position:absolute; z-index:1; bottom:0; left:0; right:0; font-size:10px; }
+@media(max-width:760px){ .rules-document { grid-template-columns:minmax(0,1fr) 115px; gap:16px; padding:22px; } .rules-cover-link { width:110px; height:155px; } }
+@media(max-width:520px){ .rules-document { grid-template-columns:1fr; } .rules-cover-link { width:140px; height:197px; } .speedrun-icon { width:40px !important; height:40px !important; min-width:40px; flex:0 0 40px !important; font-size:28px; } }
