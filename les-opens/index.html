@@ -89,26 +89,10 @@
         <div>
           <strong>LE RÈGLEMENT COMPLET DES OPENS</strong>
           <p>Freestyle, Speedrun, pénalités, catégories et grilles de difficulté : retrouvez les règles détaillées dans le PDF (6 pages).</p>
-          <a class="rules-pdf-link" id="rules-pdf-link" href="assets/Regles-de-jugement-Opens-Circuit-Parkour-Bretagne.pdf" target="_blank" rel="noopener noreferrer" hidden>Consulter les règles de jugement (PDF) ↗</a>
-          <p class="rules-pdf-status" id="rules-pdf-status">Le document PDF sera disponible ici dès sa mise en ligne.</p>
+          <a class="rules-pdf-link" href="assets/Regles-de-jugement-Opens-Circuit-Parkour-Bretagne.pdf" target="_blank" rel="noopener noreferrer">Consulter les règles de jugement (PDF) ↗</a>
         </div>
       </div>
     </section>
-    <script>
-      /* Le lien n'est affiché que lorsque le PDF existe réellement sur le site. */
-      (function () {
-        const link = document.getElementById('rules-pdf-link');
-        const status = document.getElementById('rules-pdf-status');
-        fetch(link.getAttribute('href'), { method: 'HEAD', cache: 'no-store' })
-          .then(function (response) {
-            if (response.ok && (response.headers.get('content-type') || '').includes('pdf')) {
-              link.hidden = false;
-              status.hidden = true;
-            }
-          })
-          .catch(function () { /* En cas d'indisponibilité, afficher le statut d'attente. */ });
-      })();
-    </script>
 
     <aside class="join">
       <div><h2>PREMIER RENDEZ-VOUS : BREST</h2><p>Le 29 novembre 2026, la Légion Saint-Pierre accueille l'Open de Brest. Préinscriptions, lieu et horaires sur la page de l'étape.</p></div>
